@@ -5,11 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta
-            name="description"
-            content="Documentation for the Kittn API"
-        >
-    <title>API Reference</title>
+    <title>API Documentation</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -288,14 +284,11 @@
     </style>
     <link href="stylesheets/screen-9c19b03a.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-024da600.js"></script>
+      <script src="javascripts/all_nosearch-53bdb4f3.js"></script>
 
-    <script>
-      $(function() { setupCodeCopy(); });
-    </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -304,295 +297,3238 @@
     </a>
     <div class="toc-wrapper">
       <img src="images/logo-1e815a84.png" class="logo" alt="" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
-        </div>
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
-        </div>
-        <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+            <a href="#hiex-api" class="toc-h1 toc-link" data-title="HIEX官方API文档">HIEX官方API文档</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+            <a href="#14b11e731d" class="toc-h1 toc-link" data-title="介绍"><span id="Introduction">介绍</span></a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#de7e90965f" class="toc-h1 toc-link" data-title="开始使用"><span id="startToUse">开始使用</span></a>
+          </li>
+          <li>
+            <a href="#api" class="toc-h1 toc-link" data-title="API接口加密验证"><span id="a1">API接口加密验证</span></a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#api-key" class="toc-h2 toc-link" data-title="生成API Key"><span id="a2">生成API Key</span></a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#9cea884c66" class="toc-h2 toc-link" data-title="发起请求"><span id="a3">发起请求</span></a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#d2279731bb" class="toc-h2 toc-link" data-title="签名"><span id="a4">签名</span></a>
+                  </li>
+                  <li>
+                    <a href="#f9ce6006dc" class="toc-h2 toc-link" data-title="请求交互"><span id="a6">请求交互</span></a>
+                  </li>
+                  <li>
+                    <a href="#04ca77abba" class="toc-h2 toc-link" data-title="标准规范"><span id="a9">标准规范</span></a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#api-2" class="toc-h1 toc-link" data-title="业务API参考"><span id="b5">业务API参考</span></a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#open-api" class="toc-h2 toc-link" data-title="open-api"><span id="b6">open-api</span></a>
+                  </li>
+                  <li>
+                    <a href="#ws-api" class="toc-h2 toc-link" data-title="ws-api"><span id="b7">ws-api</span></a>
+                  </li>
+                  <li>
+                    <a href="#open-api-demo-java" class="toc-h2 toc-link" data-title="open-api Demo（java） "><span id="open-api-java">open-api Demo（java） </span></a>
+                  </li>
+                  <li>
+                    <a href="#ws-api-demo-java" class="toc-h2 toc-link" data-title="ws-api Demo (java) "><span id="ws-api-java">ws-api Demo (java) </span></a>
+                  </li>
+              </ul>
           </li>
       </ul>
-        <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id='hiex-api'>HIEX官方API文档</h1><h4 id='hiex-english-docs'>HIEX交易所开发文档(<a href="https://github.com/exchange-doc/api/blob/master/hiex/us_en/api_doc_en.md">English Docs</a>)</h4>
+<ul>
+<li><a href="#Introduction">介绍</a></li>
+<li><a href="#startToUse">开始使用</a></li>
+<li><a href="#a1">API接口加密验证</a>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<ul>
+<li><a href="#a2">生成API Key</a></li>
+<li><a href="#a3">发起请求</a></li>
+<li><a href="#a4">签名</a></li>
+<li>选择时间戳</li>
+<li><a href="#a6">请求交互</a>
 
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<ul>
+<li><a href="#a7">请求</a></li>
+<li><a href="#a8">分页</a></li>
+</ul></li>
+<li><a href="#a9">标准规范</a>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<ul>
+<li><a href="#b1">时间戳</a></li>
+<li><a href="#b2">例子</a></li>
+<li><a href="#b3">数字</a></li>
+<li><a href="#b4">限流 - REST API</a></li>
+</ul></li>
+</ul></li>
+<li><p><a href="#b5">业务API参考</a></p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
+<ul>
+<li><a href="#b6">open-api</a> (<a href="#open-api-java">Java-Demo</a>)</li>
+<li>  <a href="#1">资产余额</a></li>
+<li>  <a href="#2">获取全部委托</a></li>
+<li>  <a href="#3">获取全部成交记录</a></li>
+<li>  <a href="#4">取消委托单</a></li>
+<li>  <a href="#5">根据币对取消全部委托单</a></li>
+<li>  <a href="#6">创建订单</a></li>
+<li>  <a href="#7">获取所有交易对行情</a></li>
+<li>  <a href="#8">获取K线数据</a></li>
+<li>  <a href="#9">获取当前行情</a></li>
+<li>  <a href="#10">获取行情成交记录</a></li>
+<li>  <a href="#11">获取各个币对的最新成交价</a></li>
+<li>  <a href="#12">查询买卖盘深度</a></li>
+<li>  <a href="#13">批量下单，同时批量撤回指定订单</a></li>
+<li>  <a href="#27">批量下单，同时批量撤回指定订单-V2</a></li>
+<li>  <a href="#14">获取当前委托</a></li>
+<li>  <a href="#15">获取订单详情</a></li>
+<li>  <a href="#17">查询系统支持的所有交易对及精度</a></li>
+<li>  <a href="#18">获取用户资产以及充值记录</a></li>
+<li>  [open-api 杠杆接口]</li>
+<li>  <a href="#30">批量下单，同时批量撤回指定订单</a></li>
+<li>  <a href="#31">获取杠杆全部成交记录</a></li>
+<li>  <a href="#32">获取杠杆当前委托</a></li>
+<li>  <a href="#33">根据币对获取杠杆资产</a></li>
+<li><a href="#b7">ws-api</a> (<a href="#ws-api-java">Java-Demo</a>)</li>
+<li>  <a href="#19">订阅-K线行情</a></li>
+<li>  <a href="#20">订阅-前24小时行情</a></li>
+<li>  <a href="#21">订阅-深度盘口（高频）</a></li>
+<li>  <a href="#22">订阅-深度盘口</a></li>
+<li>  <a href="#23">订阅-实时成交信息</a></li>
+<li>  <a href="#24">请求-K线历史数据</a></li>
+<li>  <a href="#25">请求-成交历史数据</a></li>
+<li>  <a href="#26">请求-首页24行情数据</a></li>
+</ul></li>
+</ul>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<hr>
+<h1 id='14b11e731d'><span id="Introduction">介绍</span></h1>
+<p>欢迎使用<a href="https://www.hiex.pro/index">HIEX</a>开发者文档</p>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>本文档提供了相关API的使用方法介绍。open-api包含了资产余额，获取全部委托，获取全部成交记录等接口，ws-api则提供了K线相关功能接口。</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<hr>
+<h1 id='de7e90965f'><span id="startToUse">开始使用</span></h1>
+<p>REST，即Representational State Transfer的缩写，是一种流行的互联网传输架构。它具有结构清晰、符合标准、易于理解、扩展方便的，正得到越来越多网站的采用。其优点如下：</p>
 
-<p><code>Authorization: meowmeowmeow</code></p>
+<ul>
+<li>在RESTful架构中，每一个URL代表一种资源；</li>
+<li>客户端和服务器之间，传递这种资源的某种表现层；</li>
+<li>客户端通过四个HTTP指令，对服务器端资源进行操作，实现“表现层状态转化”。 </li>
+</ul>
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>建议开发者使用REST API进行币币交易或者资产提现等操作。</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<hr>
+<h1 id='api'><span id="a1">API接口加密验证</span></h1><h2 id='api-key'><span id="a2">生成API Key</span></h2>
+<p>在对任何请求进行签名之前，您必须通过 <a href="https://www.hiex.pro/index">HIEX 网站</a>【用户中心】-【API】创建一个API key。 创建key后，您将获得3个必须记住的信息：</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
+<ul>
+<li><p>API Key</p></li>
+<li><p>Secret Key</p></li>
+</ul>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<p>API Key 和 Secret Key将由随机生成和提供</p>
+<h2 id='9cea884c66'><span id="a3">发起请求</span></h2>
+<p>所有REST请求都必须包含以下标题：</p>
+
+<ul>
+<li>ACCESS-KEY API KEY作为一个字符串。</li>
+<li>ACCESS-SIGN 使用base64编码签名（请参阅签名消息）。</li>
+<li>ACCESS-TIMESTAMP 作为您的请求的时间戳。</li>
+<li>所有请求都应该含有application/json类型内容，并且是有效的JSON。</li>
+</ul>
+<h2 id='d2279731bb'><span id="a4">签名</span></h2>
+<p>生成待签名的字符串
+    -   <a href="#open-api-java">open-api Demo</a></p>
+
+<p>1、先将参数以其参数名的字典序升序进行排序</p>
+
+<p>2、遍历排序后的字典，将所有参数按&quot;keyvalue&quot;格式拼接在一起（非空参数）</p>
+
+<p>3、使用MD5对待签名串求签</p>
+
+<p>例：</p>
+
+<p>api_key = 1234567</p>
+
+<p>time = 12312312312137</p>
+
+<p>secret_key = 789654</p>
+
+<p>sign=md5(api_key1234567time12312312312137789654)</p>
+<h2 id='f9ce6006dc'><span id="a6">请求交互</span></h2>
+<p>REST访问的根URL：<code>https://openapi.hiex.pro</code></p>
+<h3 id='e463496b53'><span id="a7">请求</span></h3>
+<p>所有请求基于Https协议，请求头信息中Content-Type 需要统一设置为:&#39;application/json’。</p>
+
+<p><strong>请求交互说明</strong></p>
+
+<p>1、请求参数：根据接口请求参数规定进行参数封装。</p>
+
+<p>2、提交请求参数：将封装好的请求参数通过POST/GET/DELETE等方式提交至服务器。</p>
+
+<p>3、服务器响应：服务器首先对用户请求数据进行参数安全校验，通过校验后根据业务逻辑将响应数据以JSON格式返回给用户。</p>
+
+<p>4、数据处理：对服务器响应数据进行处理。</p>
+
+<p><strong>成功</strong></p>
+
+<p>HTTP状态码200表示成功响应，并可能包含内容。如果响应含有内容，则将显示在相应的返回内容里面。</p>
+
+<p><strong>常见错误码</strong></p>
+
+<ul>
+<li><p>400 Bad Request – Invalid request forma 请求格式无效</p></li>
+<li><p>401 Unauthorized – Invalid API Key 无效的API Key</p></li>
+<li><p>403 Forbidden – You do not have access to the requested resource 请求无权限</p></li>
+<li><p>404 Not Found 没有找到请求</p></li>
+<li><p>429 Too Many Requests 请求太频繁被系统限流</p></li>
+<li><p>500 Internal Server Error – We had a problem with our server 服务器内部错误</p></li>
+</ul>
+
+<p>如果失败，response body 带有错误描述信息</p>
+<h3 id='594f3cdd9d'><span  id="a8">分页</span></h3>
+<p>部分返回数据集的REST请求支持使用游标分页。 游标分页允许在结果的当前页面之前和之后获取结果，并且非常适合于实时数据。根据当前的返回结果，后续请求可以在此基础之上指定请求数据的方向，可以请求在这之前和之后的数据。before和after游标可通过响应头CB_BEFORE和CB_AFTER使用。</p>
+
+<p><strong>例子</strong></p>
+
+<p><code>GET /orders?before=2&amp;limit=30</code></p>
+<h2 id='04ca77abba'><span id="a9">标准规范</span></h2><h3 id='4baad3dffc'><span id="b1">时间戳</span></h3>
+<p>除非另外指定，API中的所有时间戳均以微秒为单位返回。</p>
+
+<p>请求签名中的ACCESS-TIMESTAMP的单位是秒，允许用小数表示更精确的时间。请求的时间戳必须在API服务时间的30秒内，否则请求将被视为过期并被拒绝。如果本地服务器时间和API服务器时间之间存在较大的偏差，那么我们建议您使用通过查询API服务器时间来更新http header。</p>
+<h3 id='59edbd491a'><span id="b2">例子</span></h3>
+<p>1524801032573</p>
+<h3 id='8ae9853514'><span id="b3">数字</span></h3>
+<p>为了保持跨平台时精度的完整性，十进制数字作为字符串返回。建议您在发起请求时也将数字转换为字符串以避免截断和精度错误。</p>
+
+<p>整数（如交易编号和顺序）不加引号。</p>
+<h3 id='f267c470f1'><span id="b4">限流</span></h3>
+<p>如果请求过于频繁系统将自动限制请求，并在http header中返回429 too many requests状态码。</p>
+
+<p>REST API</p>
+
+<ul>
+<li><p>公共接口：我们通过IP限制公共接口的调用：每2秒最多6个请求。</p></li>
+<li><p>私人接口：我们通过用户ID限制私人接口的调用：每2秒最多6个请求。</p></li>
+<li><p>某些接口的特殊限制在具体的接口上注明</p></li>
+</ul>
+
+<hr>
+<h1 id='api-2'><span id="b5">业务API参考</span></h1><h2 id='open-api'><span id="b6">open-api</span></h2><h3 id='7c2f2901d7'><span id="1">资产余额</span></h3>
+<ol>
+<li>接口地址: /open/api/user/account</li>
+<li>接口说明: (get请求)资产余额</li>
+</ol>
+
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>返回值:</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>{<br>&quot;total_asset&quot;:432323.23,<br>&quot;coin_list&quot;:[<br>{&quot;coin&quot;:&quot;btc&quot;,&quot;normal&quot;:32323.233,&quot;locked&quot;:32323.233,&quot;btcValuatin&quot;:112.33},<br>{&quot;coin&quot;:&quot;ltc&quot;,&quot;normal&quot;:32323.233,&quot;locked&quot;:32323.233,&quot;btcValuatin&quot;:112.33},<br>{&quot;coin&quot;:&quot;bch&quot;,&quot;normal&quot;:32323.233,&quot;locked&quot;:32323.233,&quot;btcValuatin&quot;:112.33},<br>]<br>}<br></td>
+<td>total_asset:总资产<br>normal:余额账户<br>locked：冻结账户<br>btcValuatin：BTC估值</td>
+</tr>
+</tbody></table>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
+<hr>
+<h3 id='d2d71942b1'><span id="2">获取全部委托</span></h3>
+<ol>
+<li>接口地址:/open/api/v2/all_order</li>
+<li>接口说明:(get请求)获取全部委托</li>
+</ol>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<ul>
+<li><p>旧接口 /open/api/all_order 仍保留,但已经不建议使用</p></li>
+<li><p>v2版本变化: 去掉了结果返回值中的tradeList成交记录,提升效率;如果需要单一订单的成交信息,可以使用 /open/api/order_info 接口单独去查</p></li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，btcusdt，详情看下面</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>选填</td>
+<td>（新增）开始时间，精确到秒“yyyy-MM-dd mm:hh:ss”</td>
+</tr>
+<tr>
+<td>endDate</td>
+<td>选填</td>
+<td>（新增）结束时间，精确到秒“yyyy-MM-dd mm:hh:ss”</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>选填</td>
+<td>页面大小</td>
+</tr>
+<tr>
+<td>page</td>
+<td>选填</td>
+<td>页码</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+    "count":10,
+    "orderList":[
+        {
+            "side":"BUY",
+            "total_price":"0.10000000",
+            "created_at":1510993841000,
+            "avg_price":"0.10000000",
+            "countCoin":"btc",
+            "source":1,
+            "type":1,
+            "side_msg":"买入",
+            "volume":"1.000",
+            "price":"0.10000000",
+            "source_msg":"WEB",
+            "status_msg":"完全成交",
+            "deal_volume":"1.00000000",
+            "id":424,
+            "remain_volume":"0.00000000",
+            "baseCoin":"eth",
+            "status":2
+        },
+        {
+            "side":"SELL",
+            "total_price":"0.09900000",
+            "created_at":1510993715000,
+            "avg_price":"0.10000000",
+            "countCoin":"btc",
+            "source":1,
+            "type":1,
+            "side_msg":"卖出",
+            "volume":"1.000",
+            "price":"0.09900000",
+            "source_msg":"WEB",
+            "status_msg":"完全成交",
+            "deal_volume":"1.00000000",
+            "id":423,
+            "remain_volume":"0.00000000",
+            "baseCoin":"eth",
+            "status":2
+        }
+    ]
+}
 </code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+<td>bccusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+<tr>
+<td>usdt</td>
+<td>usdtcny</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='604667704d'><span id="3">获取全部成交记录</span></h3>
+<ol>
+<li>接口地址:/open/api/all_trade</li>
+<li>接口说明:(get请求)获取全部成交记录</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，btcusdt，详情看下面</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>选填</td>
+<td>（新增）开始时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+</tr>
+<tr>
+<td>endDate</td>
+<td>选填</td>
+<td>（新增）结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>选填</td>
+<td>页面大小</td>
+</tr>
+<tr>
+<td>page</td>
+<td>选填</td>
+<td>页码</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>选填</td>
+<td>1表示倒序</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+    "count":22,
+    "resultList":[
+        {
+            "volume":"1.000",
+            "side":"BUY",
+            "feeCoin":"YLB",
+            "price":"0.10000000",
+            "fee":"0.16431104",
+            "ctime":1510996571195,
+            "deal_price":"0.10000000",
+            "id":306,
+            "type":"买入",
+            "bid_id":1001,
+            "ask_id":1002,
+            "bid_user_id":10001,
+            "ask_user_id":10001
+
+        },
+        {
+            "volume":"0.850",
+            "side":"BUY",
+            "feeCoin":"YLB",
+            "price":"0.10000000",
+            "fee":"0.13966438",
+            "ctime":1510996571190,
+            "deal_price":"0.08500000",
+            "id":305,
+            "type":"买入",
+            "bid_id":1001,
+            "ask_id":1002,
+            "bid_user_id":10001,
+            "ask_user_id":10001
+        },
+        {
+            "volume":"0.010",
+            "side":"BUY",
+            "feeCoin":"YLB",
+            "price":"0.10000000",
+            "fee":"0.00164311",
+            "ctime":1510995560344,
+            "deal_price":"0.00100000",
+            "id":291,
+            "type":"买入",
+            "bid_id":1001,
+            "ask_id":1002,
+            "bid_user_id":10001,
+            "ask_user_id":10001
+        }
+    ]
+}
+</code></pre></div>
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+<td>bccusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+<tr>
+<td>usdt</td>
+<td>usdtcny</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='debd6c0464'><span id="4">取消委托单</span></h3>
+<ol>
+<li>接口地址:/open/api/cancel_order</li>
+<li>接口说明:(post请求)取消委托单</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>order_id</td>
+<td>必填</td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，ethbtc，详情看下面</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>“”</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny（xxx101）</th>
+<th>xxx-btc（xxx201）</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='a38725e807'><span id="5">根据币对取消全部委托单</span></h3>
+<ol>
+<li>接口地址:/open/api/cancel_order_all</li>
+<li>接口说明:(post请求)根据币对取消全部委托单（最多取消两千条，多余两千请循环撤销）</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，ethbtc，详情看下面</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>“”</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny（xxx101）</th>
+<th>xxx-btc（xxx201）</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='df83685cc8'><span id="6">创建订单</span></h3>
+<ol>
+<li>接口地址:/open/api/create_order</li>
+<li>接口说明:(post请求)创建订单</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>side</td>
+<td>必填</td>
+<td>买卖方向BUY、SELL</td>
+</tr>
+<tr>
+<td>type</td>
+<td>必填</td>
+<td>挂单类型，1:限价委托、2:市价委托</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>必填</td>
+<td>购买数量（多义，复用字段）<br>type=1:表示买卖数量<br>type=2:买则表示总价格，卖表示总个数<br>买卖限制user/me-用户信息</td>
+</tr>
+<tr>
+<td>price</td>
+<td>选填</td>
+<td>委托单价：type=2：不需要此参数</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，ethbtc</td>
+</tr>
+<tr>
+<td>fee_is_user_exchange_coin</td>
+<td>选填</td>
+<td>（冗余字段，忽略）0，当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>{&quot;order_id&quot;:34343}</td>
+<td>成功返回交易ID</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny（xxx101）</th>
+<th>xxx-btc（xxx201）</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='4c9de00a78'><span id="7">获取所有交易对行情</span></h3>
+<ol>
+<li>接口地址:/open/api/get_allticker</li>
+<li>接口说明:(get请求)获取所有交易对行情</li>
+</ol>
+
+<ul>
+<li>该接口不进行签名校验</li>
+<li>参数:无</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td>返回值说明<br>date: 返回数据时服务器时间 <br>symbol: 交易对（交易对1(base)简称_交易对2(quote)简称） <br>buy: 买一价 <br>high: 最高价 <br>last: 最新成交价 <br>low: 最低价 <br>sell: 卖一价 <br>vol: 成交量(最近的24小时)<br>rose:涨跌幅</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+   "date": 1534335607859,
+   "ticker": [
+     {
+       "symbol": "btcusdt",
+       "high": 7408.35984546,
+       "vol": 0.01,
+       "last": 1,
+       "low": 7408.35984546,
+       "buy": "3700.00000000",
+       "sell": "7408.35984546",
+       "rose": 0
+     },
+     {
+       "symbol": "ethusdt",
+       "high": 535.96,
+       "vol": 6366.8591,
+       "last": 20,
+       "low": 279.57,
+       "rose": -0.44564773
+     },
+     {
+       "symbol": "bchusdt",
+       "high": 12,
+       "vol": 100,
+       "last": 1,
+       "low": 12,
+       "buy": "11.00",
+       "sell": "9.00",
+       "rose": 0
+     },
+     {
+       "symbol": "ethbtc",
+       "high": 1,
+       "vol": 281261,
+       "last": 0.1,
+       "low": 0.044039,
+       "buy": "0.044049",
+       "sell": "0.044049",
+       "rose": -0.00022701
+     },
+     {
+       "symbol": "nobbtc",
+       "high": 0.007419,
+       "vol": 1998,
+       "last": 1,
+       "low": 0.007419,
+       "sell": "0.00741900",
+       "rose": 0
+     },
+     {
+       "symbol": "ltceth",
+       "last": 0.18519949,
+       "buy": "1.00000000",
+       "sell": "0.18328001"
+     }
+   ]
+ }
+</code></pre></div>
+<hr>
+<h3 id='k'><span id="8">获取K线数据</span></h3>
+<ol>
+<li>接口地址:/open/api/get_records</li>
+<li>接口说明:(get请求)获取K线数据</li>
+</ol>
+
+<ul>
+<li>该接口不进行签名校验</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，bchbtc，详情看下面</td>
+</tr>
+<tr>
+<td>period</td>
+<td>必填</td>
+<td>单位为分钟，比喻1分钟则为1，一天则为1440</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bch</td>
+<td>bcccny</td>
+<td>bchbtc</td>
+<td>bchusdt</td>
+</tr>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>[
+        [
+            1514445780,  //时间戳
+            1.12,        //开盘价
+            1.12,        //最高
+            1.12,        //最低
+            1.12,        //收盘价
+            0            //成交量
+        ],
+        [
+            1514445840,
+            1.12,
+            1.12,
+            1.12,
+            1.12,
+            0
+        ],
+        [
+            1514445900,
+            1.12,
+            1.12,
+            1.12,
+            1.12,
+            0
+        ]
+]
+</code></pre></div>
+<hr>
+<h3 id='32d30f799b'><span id="9">获取当前行情</span></h3>
+<ol>
+<li>接口地址:/open/api/get_ticker</li>
+<li>接口说明:(get请求)获取当前行情</li>
+</ol>
+
+<ul>
+<li>该接口不进行签名校验</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，btcusdt，详情看下面</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+    "high": 1,//最高值
+    "vol": 10232.26315789,//交易量
+    "last": 173.60263169,//最新成交价
+    "low": 0.01,//最低值
+    "buy": "0.01000000",//买一价
+    "sell": "1.12345680",//卖一价
+    "rose": -0.44564773,//涨跌幅
+    "time": 1514448473626
+}
+</code></pre></div>
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+<td>bccusdt</td>
+</tr>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='d260ccba65'><span id="10">获取行情成交记录</span></h3>
+<ol>
+<li>接口地址:/open/api/get_trades</li>
+<li>接口说明:(get请求)获取行情成交记录</li>
+</ol>
+
+<ul>
+<li>该接口不进行签名校验</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，bchbtc，详情看下面</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>[
+        {
+            "amount": 0.55,//成交量
+            "price": 0.18519949,//成交价
+            "id": 447121,
+            "type": "buy"//买卖type，买为buy，买sell
+        },
+        {
+            "amount": 16.45,
+            "price": 0.18335468,
+            "id": 447120,
+            "type": "buy"
+        },
+        {
+            "amount": 2,
+            "price": 0.18335468,
+            "id": 447119,
+            "type": "buy"
+        },
+        {
+            "amount": 2.92,
+            "price": 0.183324003,
+            "id": 447118,
+            "type": "sell"
+        }
+]
+</code></pre></div>
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>bch</td>
+<td>bcccny</td>
+<td>bchbtc</td>
+<td>bchusdt</td>
+</tr>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='e592a0b8d9'><span id="11">获取各个币对的最新成交价</span></h3>
+<ol>
+<li>接口地址:/open/api/market</li>
+<li>接口说明:(get请求)获取各个币对的最新成交价</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>{&quot;btcusdt&quot;:15000,&quot;ethusdt&quot;:800}</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+<td>bccusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='b9fa6c9f9f'><span id="12">查询买卖盘深度</span></h3>
+<ol>
+<li>接口地址:/open/api/market_dept</li>
+<li>接口说明:(get请求)查询买卖盘深度</li>
+</ol>
+
+<ul>
+<li>该接口不进行签名校验</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，ethbtc，详情看下面</td>
+</tr>
+<tr>
+<td>type</td>
+<td>必填</td>
+<td>深度类型，step0, step1, step2（合并深度0-2）；step0时，精度最高</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{  
+    "tick":{
+        "asks":[//卖盘
+            {22112.22,0.9332},
+            {22112.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+        ],
+        "bids":[//买盘
+            {22111.22,0.9332},
+            {22111.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+            {22112.21,0.2},
+        ]
+    }
+}
+</code></pre></div>
+<hr>
+<h3 id='edfe9158e5'><span id="13">批量下单，同时批量撤回指定订单</span></h3>
+<ol>
+<li>接口地址:/open/api/mass_replace</li>
+<li>接口说明:(post请求)批量下单，同时批量撤回指定订单</li>
+</ol>
+
+<ul>
+<li>mass_place是需要发送到系统的一批限价订单，每次最多100条</li>
+<li>mass_cancel是需要撤回的一批订单,每次最多100条</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>币种 ，例 btcusdt</td>
+</tr>
+<tr>
+<td>mass_cancel</td>
+<td>选填</td>
+<td>[1234,234....] 撤单参数，订单id</td>
+</tr>
+<tr>
+<td>mass_place</td>
+<td>选填</td>
+<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>含义：<br>symbol:币种，例btcusdt<br>mass_place:下单参数。side：方向（买卖方向BUY、SELL），<br>--------------------------------type：类型（1:限价委托、2:市价委托）<br>--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总个数<br>--------------------------------price：委托单价：type=2：不需要此参数<br>--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>&quot;mass_place&quot;: [{&quot;order_id&quot;:&quot;1234&quot;,&quot;code&quot;:&quot;0&quot;, &quot;msg&quot;:&quot;suc&quot;}，...]<br>&quot;mass_cancel&quot;: [{&quot;order_id&quot;:&quot;1234&quot;,&quot;code&quot;:&quot;0&quot;, &quot;msg&quot;:&quot;suc&quot;}，.......]</td>
+<td>下单返回：订单id，状态码，成功或失败信息。<br>撤单返回：订单id，状态码，成功或失败信息<br>0表示成功。</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='v2'><span id="27">批量下单，同时批量撤回指定订单-V2</span></h3>
+<ol>
+<li>接口地址:/open/api/mass_replaceV2</li>
+<li>接口说明:(post请求)批量下单，同时批量撤回指定订单</li>
+</ol>
+
+<ul>
+<li><p>mass_place是需要发送到系统的一批限价订单，每次最多1000条</p></li>
+<li><p>mass_cancel是需要撤回的一批订单,每次最多1000条</p></li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>币种 ，例 btcusdt</td>
+</tr>
+<tr>
+<td>mass_cancel</td>
+<td>选填</td>
+<td>[1234,234....] 撤单参数，订单id</td>
+</tr>
+<tr>
+<td>mass_place</td>
+<td>选填</td>
+<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>含义：<br>symbol:币种，例btcusdt<br>mass_place:下单参数--&gt;side：方向（买卖方向BUY、SELL），<br>--------------------------------type：类型（1:限价委托、2:市价委托）<br>--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总个数<br>--------------------------------price：委托单价：type=2：不需要此参数<br>--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>&quot;mass_place&quot;: [{&quot;msg&quot;: &quot;Success&quot;,&quot;code&quot;: &quot;0&quot;,&quot;order_id&quot;: [504,505]},{&quot;msg&quot;: &quot;Order cancellation failed&quot;,&quot;code&quot;: &quot;8&quot;,&quot;order_id&quot;: [504,505]}]<br>&quot;mass_cancel&quot;: [{&quot;msg&quot;: &quot;Success&quot;,&quot;code&quot;: &quot;0&quot;,&quot;order_id&quot;: [572,573,574,626,629]}]</td>
+<td>下单返回：订单id，状态码，成功或失败信息。<br>撤单返回：订单id，状态码，成功或失败信息<br>0表示成功。</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='3ae25b0ae0'><span id="14">获取当前委托</span></h3>
+<ol>
+<li>接口地址:/open/api/v2/new_order</li>
+<li>接口说明:(get请求)获取当前委托（包括未成交和正在成交的委托）</li>
+</ol>
+
+<ul>
+<li><p>旧接口 /open/api/new_order 仍保留,但已经不建议使用</p></li>
+<li><p>v2版本变化: 去掉了结果返回值中的tradeList成交记录,提升效率;如果需要单一订单的成交信息,可以使用 /open/api/order_info 接口单独去查</p></li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>symbo</td>
+<td>l    必填</td>
+<td>市场标记，btcusdt，详情看下面</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>选填</td>
+<td>页面大小</td>
+</tr>
+<tr>
+<td>page</td>
+<td>选填</td>
+<td>页码</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td>订单状态(status)说明：<br>INIT(0,&quot;初始订单，未成交未进入盘口&quot;),<br>NEW_(1,&quot;新订单，未成交进入盘口&quot;),<br>FILLED(2,&quot;完全成交&quot;),<br>PART_FILLED(3,&quot;部分成交&quot;),<br>CANCELED(4,&quot;已撤单&quot;),<br>PENDING_CANCEL(5,&quot;待撤单&quot;),<br>EXPIRED(6,&quot;异常订单&quot;);</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+    "count":10,
+    "resultList":[
+        {
+            "side":"BUY",
+            "total_price":"0.10000000",
+            "created_at":1510993841000,
+            "avg_price":"0.10000000",
+            "countCoin":"btc",
+            "source":1,
+            "type":1,
+            "side_msg":"买入",
+            "volume":"1.000",
+            "price":"0.10000000",
+            "source_msg":"WEB",
+            "status_msg":"完全成交",
+            "deal_volume":"1.00000000",
+            "id":424,
+            "remain_volume":"0.00000000",
+            "baseCoin":"eth",
+            "status":2
+        },
+        {
+            "side":"SELL",
+            "total_price":"0.09900000",
+            "created_at":1510993715000,
+            "avg_price":"0.10000000",
+            "countCoin":"btc",
+            "source":1,
+            "type":1,
+            "side_msg":"卖出",
+            "volume":"1.000",
+            "price":"0.09900000",
+            "source_msg":"WEB",
+            "status_msg":"完全成交",
+            "deal_volume":"1.00000000",
+            "id":423,
+            "remain_volume":"0.00000000",
+            "baseCoin":"eth",
+            "status":2
+        }
+    ]
+}
+</code></pre></div>
+<table><thead>
+<tr>
+<th>虚拟币编号</th>
+<th>xxx-cny</th>
+<th>xxx-btc</th>
+<th>xxx-usdt</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>btc</td>
+<td>btccny</td>
+<td>-</td>
+<td>btcusdt</td>
+</tr>
+<tr>
+<td>eth</td>
+<td>ethcny</td>
+<td>ethbtc</td>
+<td>ethusdt</td>
+</tr>
+<tr>
+<td>ltc</td>
+<td>ltccny</td>
+<td>ltcbtc</td>
+<td>ltcusdt</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>bcccny</td>
+<td>bccbtc</td>
+<td>bccusdt</td>
+</tr>
+<tr>
+<td>etc</td>
+<td>etccny</td>
+<td>etcbtc</td>
+<td>etcusdt</td>
+</tr>
+<tr>
+<td>usdt</td>
+<td>usdtcny</td>
+<td>-</td>
+<td>-/web/new_order-获取当前委托</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='5e1d8c8f3b'><span id="15">获取订单详情</span></h3>
+<ol>
+<li>接口地址:/open/api/order_info</li>
+<li>接口说明:(get请求)获取订单详情</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>order_id</td>
+<td>必填</td>
+<td>订单ID</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，ethbtc，详情看下面</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+    "order_info":{
+        "id":343,
+        "side":"sell",
+        "side_msg":"卖出",
+        "created_at":"09-22 12:22",
+        "price":222.33,
+        "volume":222.33,
+        "deal_volume":222.33,
+        "total_price":222.33,
+        "fee":222.33,
+        "avg_price":222.33}
+    }
+    "trade_list":[
+        {
+            "id":343,
+            "created_at":"09-22 12:22",
+            "price":222.33,
+            "volume":222.33,
+            "deal_price":222.33,
+            "fee":222.33
+        },
+        {
+            "id":345,
+            "created_at":"09-22 12:22",
+            "price":222.33,
+            "volume":222.33,
+            "deal_price":222.33,
+            "fee":222.33
+        }
+    ]
+}
+</code></pre></div>
+<hr>
+<h3 id='140f5e499a'><span id="17">查询系统支持的所有交易对及精度</span></h3>
+<ol>
+<li>接口地址:/open/api/common/symbols</li>
+<li>接口说明:(get请求)查询系统支持的所有交易对及精度</li>
+</ol>
+
+<ul>
+<li>参数:无</li>
+</ul>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td>symbol 交易对<br>base_coin 基础币种<br>count_coin 计价货币<br>price_precision 价格精度位数（0为个位）<br>amount_precision 数量精度位数（0为个位）</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+"code": "0",
+"msg": "suc",
+"data": [
+{
+"symbol": "ethbtc",
+"count_coin": "btc",
+"amount_precision": 3,
+"base_coin": "eth",
+"price_precision": 8
+},
+{
+"symbol": "ltcbtc",
+"count_coin": "btc",
+"amount_precision": 2,
+"base_coin": "ltc",
+"price_precision": 8
+},
+{
+"symbol": "bchbtc",
+"count_coin": "btc",
+"amount_precision": 3,
+"base_coin": "bch",
+"price_precision": 8
+},
+{
+"symbol": "etcbtc",
+"count_coin": "btc",
+"amount_precision": 2,
+"base_coin": "etc",
+"price_precision": 8
+},
+{
+"symbol": "ltceth",
+"count_coin": "eth",
+"amount_precision": 2,
+"base_coin": "ltc",
+"price_precision": 8
+},
+{
+"symbol": "etceth",
+"count_coin": "eth",
+"amount_precision": 2,
+"base_coin": "etc",
+"price_precision": 8
+}
+]
+}
+</code></pre></div>
+<hr>
+<h3 id='8dbd99835a'><span id="18">获取用户资产以及充值记录</span></h3>
+<ol>
+<li>接口地址:/open/api/user_balance_info</li>
+<li>接口说明:(post请求)获取用户资产以及充值记录</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>uid</td>
+<td>选填</td>
+<td>用户uid（用户uid,mobile_number,email三者必须填其中一个）</td>
+</tr>
+<tr>
+<td>mobile_number</td>
+<td>选填</td>
+<td>查询的用户号码，手机号码或者邮箱</td>
+</tr>
+<tr>
+<td>email</td>
+<td>选填</td>
+<td>用户邮箱</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td>“0” - &gt; 成功<br>“100004” -&gt;参数不合法<br>“100005” -&gt; 签名错误<br>“100007” -&gt; 非法IP<br>&quot;110032&quot; -&gt; 用户无查询权限<br>“110020” -&gt; 要查询的用户不存在</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下：</td>
+<td>balance_info 各个币种的资产信息<br>deposit_list 充值的流水信息</td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+"balance_info":[
+    {
+        "symbol":"BTC",
+        "balance":124.12
+    },...
+],
+"deposit_list":[
+    {
+        "uid":17203,
+        "symbol":"BTC",
+        "fee":0.00005,
+        "amount":12.02,
+        "created_at":"2018-11-14 15:37:51"
+    },...
+]
+}
+</code></pre></div>
+<hr>
+<h3 id='4823aced82'><span id="30">批量下单，同时批量撤回指定订单-杠杆</span></h3>
+<ol>
+<li>接口地址:/open/api/margin/mass_replace</li>
+<li>接口说明:(post请求)批量下单，同时批量撤回指定订单</li>
+</ol>
+
+<ul>
+<li><p>mass_place是需要发送到系统的一批限价订单，每次最多1000条</p></li>
+<li><p>mass_cancel是需要撤回的一批订单,每次最多1000条</p></li>
+</ul>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>币种 ，例 btcusdt</td>
+</tr>
+<tr>
+<td>mass_cancel</td>
+<td>选填</td>
+<td>[1234,234....] 撤单参数，订单id</td>
+</tr>
+<tr>
+<td>mass_place</td>
+<td>选填</td>
+<td>[{side:&quot;BUY&quot;,type:&quot;1&quot;,volume:&quot;0.01&quot;,price:&quot;6400&quot;,fee_is_user_exchange_coin:&quot;0&quot;}, {}, …]<br>含义：<br>symbol:币种，例btcusdt<br>mass_place:下单参数--&gt;side：方向（买卖方向BUY、SELL），<br>--------------------------------type：类型（1:限价委托、2:市价委托）<br>--------------------------------volume：购买数量（多义，复用字段） type=1:表示买卖数量type=2:买则表示总价格，卖表示总个数<br>--------------------------------price：委托单价：type=2：不需要此参数<br>--------------------------------fee_is_user_exchange_coin：(冗余字段)当交易所有平台币时，此参数表示是否使用用平台币支付手续费，0否，1是</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>&quot;mass_place&quot;: [{&quot;msg&quot;: &quot;Success&quot;,&quot;code&quot;: &quot;0&quot;,&quot;order_id&quot;: [504,505]},{&quot;msg&quot;: &quot;Order cancellation failed&quot;,&quot;code&quot;: &quot;8&quot;,&quot;order_id&quot;: [504,505]}]<br>&quot;mass_cancel&quot;: [{&quot;msg&quot;: &quot;Success&quot;,&quot;code&quot;: &quot;0&quot;,&quot;order_id&quot;: [572,573,574,626,629]}]</td>
+<td>下单返回：订单id，状态码，成功或失败信息。<br>撤单返回：订单id，状态码，成功或失败信息<br>0表示成功。</td>
+</tr>
+</tbody></table>
+
+<hr>
+<h3 id='fa4a6375fe'><span id="31">获取杠杆全部成交记录</span></h3>
+<ol>
+<li>接口地址:/open/api/margin/all_trade</li>
+<li>接口说明:(get请求)获取全部成交记录</li>
+</ol>
+
+<table><thead>
+<tr>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>必填</td>
+<td>查询成交记录的类型，不填次参数返回币币交易成交; 例如：type = 2 杠杆订单 1币币订单</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，btcusdt，详情看下面</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>选填</td>
+<td>（新增）开始时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+</tr>
+<tr>
+<td>endDate</td>
+<td>选填</td>
+<td>（新增）结束时间，精确到秒“yyyy-MM-dd HH:mm:ss”</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>选填</td>
+<td>页面大小</td>
+</tr>
+<tr>
+<td>page</td>
+<td>选填</td>
+<td>页码</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>选填</td>
+<td>1表示倒序</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
+</tr>
+</tbody></table>
+
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td></td>
+</tr>
+</tbody></table>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="nl">"count"</span><span class="p">:</span><span class="mi">221</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"resultList"</span><span class="p">:[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"1.000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"BUY"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"feeCoin"</span><span class="p">:</span><span class="s2">"YLB"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fee"</span><span class="p">:</span><span class="s2">"0.16431104"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ctime"</span><span class="p">:</span><span class="mi">1510996571195</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deal_price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">306</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"买入"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"bid_id"</span><span class="p">:</span><span class="mi">1001</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ask_id"</span><span class="p">:</span><span class="mi">1002</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"bid_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ask_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="w">
+
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"0.850"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"BUY"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"feeCoin"</span><span class="p">:</span><span class="s2">"YLB"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fee"</span><span class="p">:</span><span class="s2">"0.13966438"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ctime"</span><span class="p">:</span><span class="mi">1510996571190</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deal_price"</span><span class="p">:</span><span class="s2">"0.08500000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">305</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"买入"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"bid_id"</span><span class="p">:</span><span class="mi">1001</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ask_id"</span><span class="p">:</span><span class="mi">1002</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"bid_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ask_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"0.010"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"BUY"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"feeCoin"</span><span class="p">:</span><span class="s2">"YLB"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"fee"</span><span class="p">:</span><span class="s2">"0.00164311"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ctime"</span><span class="p">:</span><span class="mi">1510995560344</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deal_price"</span><span class="p">:</span><span class="s2">"0.00100000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">291</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="s2">"买入"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"bid_id"</span><span class="p">:</span><span class="mi">1001</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ask_id"</span><span class="p">:</span><span class="mi">1002</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"bid_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"ask_user_id"</span><span class="p">:</span><span class="mi">10001</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
+<hr>
+<h3 id='1fa6ebd389'><span id="32">获取全部委托</span></h3>
+<ol>
+<li>接口地址:/open/api/margin/new_order</li>
+<li>接口说明:(get请求)获取全部委托</li>
+</ol>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
+<ul>
+<li>v2版本变化: 去掉了结果返回值中的tradeList成交记录,提升效率;如果需要单一订单的成交信息,可以使用 /open/api/order_info 接口单独去查</li>
+</ul>
+
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>type</td>
+<td>必填</td>
+<td>查询成交记录的类型，不填次参数返回币币交易成交; 例如：type = 2 杠杆订单 1币币订单</td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>必填</td>
+<td>市场标记，btcusdt，详情看下面</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>选填</td>
+<td>（新增）开始时间，精确到秒“yyyy-MM-dd mm:hh:ss”</td>
+</tr>
+<tr>
+<td>endDate</td>
+<td>选填</td>
+<td>（新增）结束时间，精确到秒“yyyy-MM-dd mm:hh:ss”</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>选填</td>
+<td>页面大小</td>
+</tr>
+<tr>
+<td>page</td>
+<td>选填</td>
+<td>页码</td>
+</tr>
+<tr>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>返回值:</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span> <span class="se">\</span>
-  <span class="nt">-X</span> DELETE <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td></td>
+</tr>
+</tbody></table>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+    </span><span class="nl">"count"</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orderList"</span><span class="p">:[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"BUY"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"total_price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="mi">1510993841000</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avg_price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"countCoin"</span><span class="p">:</span><span class="s2">"btc"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"source"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"side_msg"</span><span class="p">:</span><span class="s2">"买入"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"1.000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"source_msg"</span><span class="p">:</span><span class="s2">"WEB"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status_msg"</span><span class="p">:</span><span class="s2">"完全成交"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deal_volume"</span><span class="p">:</span><span class="s2">"1.00000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">424</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"remain_volume"</span><span class="p">:</span><span class="s2">"0.00000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"baseCoin"</span><span class="p">:</span><span class="s2">"eth"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"side"</span><span class="p">:</span><span class="s2">"SELL"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"total_price"</span><span class="p">:</span><span class="s2">"0.09900000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_at"</span><span class="p">:</span><span class="mi">1510993715000</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"avg_price"</span><span class="p">:</span><span class="s2">"0.10000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"countCoin"</span><span class="p">:</span><span class="s2">"btc"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"source"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"side_msg"</span><span class="p">:</span><span class="s2">"卖出"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"volume"</span><span class="p">:</span><span class="s2">"1.000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"price"</span><span class="p">:</span><span class="s2">"0.09900000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"source_msg"</span><span class="p">:</span><span class="s2">"WEB"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status_msg"</span><span class="p">:</span><span class="s2">"完全成交"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"deal_volume"</span><span class="p">:</span><span class="s2">"1.00000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">423</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"remain_volume"</span><span class="p">:</span><span class="s2">"0.00000000"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"baseCoin"</span><span class="p">:</span><span class="s2">"eth"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
-</tr>
-</tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
+<hr>
+<h3 id='21d2374569'><span id="33">获取杠杆资产余额</span></h3>
+<ol>
+<li>接口地址: /open/api/margin/symbol/balance</li>
+<li>接口说明: (get请求)资产余额</li>
+</ol>
 
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>参数</th>
+<th>填写类型</th>
+<th>说明</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
+<td>symbol</td>
+<td>必填</td>
+<td>币对名称</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
+<td>api_key</td>
+<td>必填</td>
+<td>api_key</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>time</td>
+<td>必填</td>
+<td>时间戳</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td>sign</td>
+<td>必填</td>
+<td>签名</td>
 </tr>
 </tbody></table>
 
+<p>返回值:</p>
+
+<table><thead>
+<tr>
+<th>字段</th>
+<th>实例</th>
+<th>解释</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>msg</td>
+<td>&quot;suc&quot;</td>
+<td>code&gt;0失败</td>
+</tr>
+<tr>
+<td>data</td>
+<td>如下:</td>
+<td></td>
+</tr>
+</tbody></table>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">        </span><span class="p">{</span><span class="w">
+            </span><span class="err">'baseTotalBalance':'</span><span class="mf">8.89800000</span><span class="err">'</span><span class="p">,</span><span class="err">//base总资产</span><span class="w">
+            </span><span class="err">'baseNormalBalance':'</span><span class="mf">8.89800000</span><span class="err">'</span><span class="p">,</span><span class="w"> </span><span class="err">//可用</span><span class="w">
+            </span><span class="err">'baseLockBalance':'</span><span class="mf">8.89800000</span><span class="err">'</span><span class="p">,</span><span class="w"> </span><span class="err">//冻结</span><span class="w">
+            </span><span class="err">'quoteTotalBalance':'</span><span class="mf">8.89800000</span><span class="err">'</span><span class="p">,</span><span class="err">//quote总资产</span><span class="w">
+            </span><span class="err">'quoteNormalBalance':'</span><span class="mf">8.89800000</span><span class="err">'</span><span class="p">,</span><span class="w"> </span><span class="err">//可用</span><span class="w">
+            </span><span class="err">'quoteLockBalance':'</span><span class="mf">8.89800000</span><span class="err">'</span><span class="p">,</span><span class="w"> </span><span class="err">//冻结</span><span class="w">
+            </span><span class="err">'quoteCoin':'USDT'</span><span class="p">,</span><span class="err">//计价货币</span><span class="w">
+            </span><span class="err">'baseCoin':'BTC'</span><span class="p">,</span><span class="w"> </span><span class="err">//基准货币</span><span class="w">
+            </span><span class="err">'symbol':</span><span class="w"> </span><span class="err">'BTCUSDT'</span><span class="w">
+            </span><span class="err">'riskRate':'</span><span class="mi">110</span><span class="err">'</span><span class="p">,</span><span class="err">//风险率</span><span class="w">
+            </span><span class="err">'burstPrice':'</span><span class="mi">1111</span><span class="err">'</span><span class="p">,</span><span class="err">//爆仓价</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<hr>
+<h2 id='ws-api'><span id="b7">ws-api</span></h2>
+<p>访问的根URL：wss://ws.hiex.pro</p>
+
+<hr>
+<h3 id='k-2'><span id="19">订阅-K线行情</span></h3>
+<ul>
+<li>请求:
+<code>
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;}}
+</code></li>
+<li>返回订阅状态1次:
+<code>
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+</code></li>
+<li>持续返回订阅消息:
+<code>
+{
+&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,//订阅的交易对行情$base$quote表示btckrw等
+&quot;ts&quot;:1506584998239,//请求时间
+&quot;tick&quot;:{
+    &quot;id&quot;:1506602880,//时间刻度起始值
+    &quot;amount&quot;:123.1221,//交易额
+    &quot;vol&quot;:1212.12211,//交易量
+    &quot;open&quot;:2233.22,//开盘价
+    &quot;close&quot;:1221.11,//收盘价
+    &quot;high&quot;:22322.22,//最高价
+    &quot;low&quot;:2321.22//最低价
+}
+}
+</code></li>
+</ul>
+
+<hr>
+<h3 id='24'><span id="20">订阅-前24小时行情</span></h3>
+<ul>
+<li>请求:
+<code>
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,&quot;cb_id&quot;:&quot;自定义&quot;}}
+</code></li>
+<li>返回订阅状态1次:
+```
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;,&quot;lower_frame&quot;:&quot;0&quot;} // lower_frame: 0 币对没下架、 1 币对下架</li>
+</ul>
+<div class="highlight"><pre class="highlight plaintext"><code>* 持续返回订阅消息:
+</code></pre></div>
+<p>{
+    &quot;channel&quot;:&quot;market_$base$quote_ticker&quot;,//订阅的交易对行情$base$quote表示btckrw等
+    &quot;ts&quot;:1506584998239,//请求时间
+    &quot;tick&quot;:{
+        &quot;id&quot;:1506584998,//冗余，无实际意义，时间戳
+        &quot;amount&quot;:123.1221,//交易额
+        &quot;vol&quot;:1212.12211,//交易量
+        &quot;open&quot;:2233.22,//开盘价
+        &quot;close&quot;:1221.11,//收盘价
+        &quot;high&quot;:22322.22,//最高价
+        &quot;low&quot;:2321.22,//最低价
+        &quot;rose&quot;:-0.2922,//涨幅
+        &quot;ts&quot;:1506584998239,//数据产生时间
+        &quot;lower_frame&quot;:&quot;0&quot;
+    }
+}
+```</p>
+
+<hr>
+<h3 id='7e5bd7fce9'><span id="21">订阅-深度盘口（高频）</span></h3>
+<ul>
+<li>请求:
+<code>
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150}}
+</code></li>
+<li><p>返回订阅状态1次:
+<code>
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+</code></p></li>
+<li><p>注：第一次订阅成功会立刻返回一次全量数据， 另外server也会定期推个全量数据给前端  避免数据出问题</p></li>
+<li><p>全量：前端直接替换原有盘口
+<code>
+{
+&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quote表示btckrw等,深度有3个维度，0、1、2
+&quot;ts&quot;:1506584998239,//请求时间
+&quot;tick&quot;:{
+    &quot;asks&quot;:[//卖盘
+        [22112.22,0.9332],
+        [22112.21,0.2],
+    ],
+    &quot;buys&quot;:[//买盘
+        [22111.22,0.9332],
+        [22111.21,0.2],
+    ]
+}
+}
+</code></p></li>
+<li><p>注： 增量盘口信息 前端只需要替换价格对应的数量即可， volume=0时删除， price与原有盘口某个价格段的price相等时更新volume,  新的price直接新增</p></li>
+<li><p>增量盘口信息（该盘口变化的价格段）
+<code>
+{
+&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quote表示btckrw等,深度有3个维度，0、1、2
+&quot;ts&quot;:1506584998239,//请求时间
+&quot;tick&quot;:{
+    &quot;side&quot;: &quot;asks&quot;, 买卖盘方向  asks： 卖盘  buys: 买盘  
+    &quot;price&quot; : 133.55,  盘口对应的某个价格段
+    &quot;volume&quot; : 44.22   价格段对应的数量
+}
+}
+</code></p></li>
+</ul>
+
+<hr>
+<h3 id='c825d2a6c4'><span id="22">订阅-深度盘口</span></h3>
+<ul>
+<li>请求:
+<code>
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150}}
+</code></li>
+<li>返回订阅状态1次:
+<code>
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;asks&quot;:150,&quot;bids&quot;:150,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+</code></li>
+<li>持续返回订阅消息:
+<code>
+{
+&quot;channel&quot;:&quot;market_$base$quote_depth_step[0-2]&quot;,//$base$quote表示btckrw等,深度有3个维度，0、1、2
+&quot;ts&quot;:1506584998239,//请求时间
+&quot;tick&quot;:{
+    &quot;asks&quot;:[//卖盘
+        [22112.22,0.9332],
+        [22112.21,0.2]
+    ],
+    &quot;buys&quot;:[//买盘
+        [22111.22,0.9332],
+        [22111.21,0.2]
+    ]
+}
+}
+</code></li>
+</ul>
+
+<hr>
+<h3 id='a3f68bd2a5'><span id="23">订阅-实时成交信息 </span></h3>
+<ul>
+<li>请求:
+<code>
+{&quot;event&quot;:&quot;sub&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;自定义&quot;}}
+</code></li>
+<li>返回订阅状态1次:
+<code>
+{&quot;event_rep&quot;:&quot;subed&quot;,&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;}
+</code></li>
+<li>持续返回订阅消息:
+<code>
+{
+&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,//订阅的交易对行情$base$quote表示btckrw等
+&quot;ts&quot;:1506584998239,//请求时间
+&quot;tick&quot;:{
+    &quot;id&quot;:12121,//data中最大交易ID
+    &quot;ts&quot;:1506584998239,//data中最大时间
+    &quot;data&quot;:[
+        {
+            &quot;id&quot;:12121,//交易ID
+            &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
+            &quot;price&quot;:32.233,//单价
+            &quot;vol&quot;:232,//数量
+            &quot;amount&quot;:323,//总额
+            &quot;ts&quot;:1506584998239,//数据产生时间
+            &quot;ds&quot;:&#39;2017-09-10 23:12:21&#39;
+        },
+        {
+            &quot;id&quot;:12120,//交易ID
+            &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
+            &quot;price&quot;:32.233,//单价
+            &quot;vol&quot;:232,//数量
+            &quot;amount&quot;:323,//总额
+            &quot;ts&quot;:1506584998239,//数据产生时间
+            &quot;ds&quot;:&#39;2017-09-10 23:12:21&#39;
+        }
+    ]
+}
+}
+</code></li>
+</ul>
+
+<hr>
+<h3 id='k-3'><span id="24">请求-K线历史数据</span></h3>
+<ul>
+<li><p>增加请求参数endIdx，pageSize（最多300，默认300条数据）,如果endIdx为空，则返回最近300条历史数据</p></li>
+<li><p>请求:
+<code>
+{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;since&quot;:&quot;1506602880&quot;}}//since缺省时返回最新300条，有值时返回大于since的最多1小时数据，since有强校验，不能早于当前1小时  since取到59
+</code></p></li>
+<li><p>返回一次历史数据:
+<code>
+{
+&quot;event_rep&quot;:&quot;rep&quot;,&quot;channel&quot;:&quot;market_$base$quote_kline_[1min/5min/15min/30min/60min/1day/1week/1month]&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,
+&quot;since&quot;:&quot;1506602880&quot;,//since缺省时返回最新300条，有值时返回大于since的最多1小时数据，since有强校验，不能早于当前1小时
+&quot;ts&quot;:1506584998239,//请求时间
+&quot;data&quot;:[//300条
+    {
+        &quot;id&quot;:1506602880,//时间刻度起始值
+        &quot;amount&quot;:123.1221,//交易额
+        &quot;vol&quot;:1212.12211,//交易量
+        &quot;open&quot;:2233.22,//开盘价
+        &quot;close&quot;:1221.11,//收盘价
+        &quot;high&quot;:22322.22,//最高价
+        &quot;low&quot;:2321.22//最低价
+    },
+    {
+        &quot;id&quot;:1506602880,//时间刻度起始值
+        &quot;amount&quot;:123.1221,//交易额
+        &quot;vol&quot;:1212.12211,//交易量
+        &quot;open&quot;:2233.22,//开盘价
+        &quot;close&quot;:1221.11,//收盘价
+        &quot;high&quot;:22322.22,//最高价
+        &quot;low&quot;:2321.22//最低价
+    }
+]
+}
+</code></p></li>
+</ul>
+
+<hr>
+<h3 id='dc4d04972a'><span id="25">请求-成交历史数据 </span></h3>
+<ul>
+<li>请求:
+<code>
+{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;自定义&quot;,&quot;top&quot;:200}}
+</code></li>
+<li>直接返回成交信息:
+<code>
+{
+&quot;event_rep&quot;:&quot;rep&quot;,&quot;channel&quot;:&quot;market_$base$quote_trade_ticker&quot;,&quot;cb_id&quot;:&quot;原路返回&quot;,&quot;ts&quot;:1506584998239,&quot;status&quot;:&quot;ok&quot;,
+&quot;top&quot;:200,//最大支持200
+&quot;data&quot;:[
+    {
+        &quot;id&quot;:12121,//交易ID
+        &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
+        &quot;price&quot;:32.233,//单价
+        &quot;vol&quot;:232,//数量
+        &quot;amount&quot;:323,//总额
+        &quot;ts&quot;:1506584998239//数据产生时间
+    },
+    {
+        &quot;id&quot;:12120,//交易ID
+        &quot;side&quot;:&quot;buy&quot;,//买卖方向buy,sell
+        &quot;price&quot;:32.233,//单价
+        &quot;vol&quot;:232,//数量
+        &quot;amount&quot;:323,//总额
+        &quot;ts&quot;:1506584998239,//数据产生时间
+        &quot;ds&quot;:&#39;2017-09-10 23:12:21&#39;
+    }
+]
+}
+</code></li>
+</ul>
+
+<hr>
+<h3 id='24-2'><span id="26">请求-首页24行情数据</span></h3>
+<ul>
+<li>请求方式:
+<code>
+{&quot;event&quot;:&quot;req&quot;,&quot;params&quot;:{&quot;channel&quot;:&quot;review&quot;}}
+</code></li>
+<li>返回数据示例:
+<code>
+{
+event_rep: &quot;rep&quot;,
+channel: &quot;review&quot;,
+data: {
+      bchbtc:  {amount: &quot;115.968833484&quot;close: &quot;0.07956&quot;high: &quot;0.086323&quot;low: &quot;0.079251&quot;open: &quot;0.086323&quot;rose: &quot;-0.07834528&quot;vol: &quot;1393.247&quot;}
+      bchusdt: {amount: &quot;416316.164145661&quot;, close: &quot;513.56&quot;, high: &quot;556.42&quot;, low: &quot;510.85&quot;, open: &quot;555.71&quot;, …}
+      btcusdt: {amount: &quot;999341.34124&quot;, close: &quot;6450.18&quot;, high: &quot;6486.39&quot;, low: &quot;6359.63&quot;, open: &quot;6435.79&quot;, …}
+}
+}
+</code></li>
+</ul>
+
+<hr>
+<h2 id='open-api-demo-java'><span id="open-api-java">open-api Demo（java） </span></h2><div class="highlight"><pre class="highlight mosel"><code>
+<span class="k">package</span> <span class="n">com</span><span class="p">.</span><span class="n">exchange</span><span class="p">.</span><span class="n">stats</span><span class="p">.</span><span class="n">action</span><span class="p">;</span>
+
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">InputStream</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">UnsupportedEncodingException</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">MessageDigest</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">NoSuchAlgorithmException</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">Date</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">Map</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">Map</span><span class="p">.</span><span class="n">Entry</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="k">Set</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">TreeMap</span><span class="p">;</span>
+
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">commons</span><span class="p">.</span><span class="n">httpclient</span><span class="p">.</span><span class="n">HttpClient</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">commons</span><span class="p">.</span><span class="n">httpclient</span><span class="p">.</span><span class="n">methods</span><span class="p">.</span><span class="n">GetMethod</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">commons</span><span class="p">.</span><span class="n">httpclient</span><span class="p">.</span><span class="n">methods</span><span class="p">.</span><span class="n">PostMethod</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">commons</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">IOUtils</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="n">class</span> <span class="n">Main</span> <span class="p">{</span>
+    <span class="p">/**</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">args</span>
+     <span class="p">*/</span>
+    <span class="k">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="k">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">/**</span> <span class="m">4</span><span class="err">个变量，</span><span class="n">api_key</span><span class="p">,</span><span class="n">secret_key</span> <span class="p">*/</span> 
+ <span class="k">String</span> <span class="n">api_key</span> <span class="p">=</span> <span class="s2">"9750*****************65d1"</span><span class="p">;</span>
+ <span class="k">String</span> <span class="n">secret_key</span> <span class="p">=</span> <span class="s2">"1c16******************2982"</span><span class="p">;</span>
+
+        <span class="p">/**</span> <span class="err">封装需要签名的参数</span> <span class="p">*/</span>
+        <span class="n">TreeMap</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">params</span> <span class="p">=</span> <span class="n">new</span> <span class="n">TreeMap</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;();</span>
+        <span class="n">params</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s2">"api_key"</span><span class="p">,</span> <span class="n">api_key</span><span class="p">);</span>
+        <span class="n">params</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s2">"time"</span><span class="p">,</span> <span class="n">new</span> <span class="n">Date</span><span class="p">().</span><span class="nf">getTime</span><span class="p">()</span> <span class="p">+</span> <span class="s2">""</span><span class="p">);</span>
+        <span class="p">/**</span> <span class="err">拼接签名字符串，</span><span class="n">md5</span><span class="err">签名</span> <span class="p">*/</span>
+        <span class="n">StringBuilder</span> <span class="n">result</span> <span class="p">=</span> <span class="n">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
+        <span class="k">Set</span><span class="p">&lt;</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;&gt;</span> <span class="n">entrys</span> <span class="p">=</span> <span class="n">params</span><span class="p">.</span><span class="n">entrySet</span><span class="p">();</span>
+        <span class="n">for</span> <span class="p">(</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">param</span> <span class="p">:</span> <span class="n">entrys</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">/**</span> <span class="err">去掉签名字段</span> <span class="p">*/</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">getKey</span><span class="p">().</span><span class="n">equals</span><span class="p">(</span><span class="s2">"sign"</span><span class="p">))</span> <span class="p">{</span>
+                <span class="n">continue</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="p">/**</span> <span class="err">空参数不参与签名</span> <span class="p">*/</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="nf">getValue</span><span class="p">()</span> <span class="c1">!= null) {
+</span>                <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">getKey</span><span class="p">());</span>
+                <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="nf">getValue</span><span class="p">().</span><span class="n">toString</span><span class="p">());</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">secret_key</span><span class="p">);</span>
+        <span class="k">String</span> <span class="n">sign</span> <span class="p">=</span> <span class="n">getMD5</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">toString</span><span class="p">());</span>
+        <span class="n">params</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s2">"sign"</span><span class="p">,</span> <span class="n">sign</span><span class="p">);</span>
+
+        <span class="p">/**</span> <span class="n">http</span><span class="err">请求</span> <span class="p">*/</span>
+        <span class="k">String</span> <span class="n">resultJson</span> <span class="p">=</span> <span class="n">get</span><span class="p">(</span><span class="s2">"https://openapi.hiex.pro/open/api/get_trades"</span><span class="p">,</span> <span class="n">params</span><span class="p">);</span>
+        <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">resultJson</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="p">/**</span>
+     <span class="p">*</span> <span class="err">通过</span><span class="n">post</span><span class="err">来提交数据，带参数的方法</span>
+     <span class="p">*</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">url</span>    <span class="err">请求地址</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">params</span> <span class="err">参数</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">return</span>
+     <span class="p">*/</span>
+    <span class="k">public</span> <span class="n">static</span> <span class="k">String</span> <span class="n">post</span><span class="p">(</span><span class="k">String</span> <span class="n">url</span><span class="p">,</span> <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">params</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">String</span> <span class="n">str</span> <span class="p">=</span> <span class="n">null</span><span class="p">;</span>
+        <span class="n">try</span> <span class="p">{</span>
+            <span class="n">HttpClient</span> <span class="n">client</span> <span class="p">=</span> <span class="n">new</span> <span class="n">HttpClient</span><span class="p">();</span>
+            <span class="n">PostMethod</span> <span class="n">method</span> <span class="p">=</span> <span class="n">new</span> <span class="n">PostMethod</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
+            <span class="p">//</span><span class="err">设定请求头的样式</span> 
+            <span class="n">method</span><span class="p">.</span><span class="n">setRequestHeader</span><span class="p">(</span><span class="s2">"Content-Type"</span><span class="p">,</span> <span class="s2">"application/x-www-form-urlencoded;charset=utf-8"</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">params</span> <span class="c1">!= null &amp;&amp; params.size() &gt; 0) {
+</span>                <span class="n">for</span> <span class="p">(</span><span class="n">Map</span><span class="p">.</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">entry</span> <span class="p">:</span> <span class="n">params</span><span class="p">.</span><span class="n">entrySet</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="n">method</span><span class="p">.</span><span class="n">setParameter</span><span class="p">(</span><span class="n">entry</span><span class="p">.</span><span class="n">getKey</span><span class="p">(),</span> <span class="n">entry</span><span class="p">.</span><span class="nf">getValue</span><span class="p">());</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="n">int</span> <span class="n">code</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">executeMethod</span><span class="p">(</span><span class="n">method</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">code</span> <span class="p">&gt;=</span> <span class="m">200</span> <span class="p">&amp;&amp;</span> <span class="n">code</span> <span class="p">&lt;</span> <span class="m">300</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">InputStream</span> <span class="k">in</span> <span class="p">=</span> <span class="n">method</span><span class="p">.</span><span class="n">getResponseBodyAsStream</span><span class="p">();</span>
+                <span class="n">str</span> <span class="p">=</span> <span class="n">IOUtils</span><span class="p">.</span><span class="n">toString</span><span class="p">(</span><span class="k">in</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">//</span> <span class="n">TODO</span> <span class="n">Auto</span><span class="p">-</span><span class="n">generated</span> <span class="n">catch</span> <span class="n">block</span> 
+            <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="n">return</span> <span class="n">str</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">/**</span>
+     <span class="p">*</span> <span class="err">通过</span><span class="n">get</span><span class="err">来提交数据，带参数的方法</span>
+     <span class="p">*</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">url</span>    <span class="err">请求地址</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">params</span> <span class="err">参数</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">return</span>
+     <span class="p">*/</span>
+    <span class="k">public</span> <span class="n">static</span> <span class="k">String</span> <span class="n">get</span><span class="p">(</span><span class="k">String</span> <span class="n">url</span><span class="p">,</span> <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">params</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">String</span> <span class="n">str</span> <span class="p">=</span> <span class="n">null</span><span class="p">;</span>
+        <span class="n">try</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">params</span> <span class="c1">!= null &amp;&amp; params.size() &gt; 0) {
+</span>                <span class="n">int</span> <span class="n">x</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+                <span class="n">for</span> <span class="p">(</span><span class="n">Map</span><span class="p">.</span><span class="n">Entry</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">entry</span> <span class="p">:</span> <span class="n">params</span><span class="p">.</span><span class="n">entrySet</span><span class="p">())</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="n">url</span> <span class="p">=</span> <span class="n">url</span> <span class="p">+</span> <span class="s2">"?"</span><span class="p">;</span>
+                    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                        <span class="n">url</span> <span class="p">=</span> <span class="n">url</span> <span class="p">+</span> <span class="s2">"&amp;"</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="n">url</span> <span class="p">+=</span> <span class="n">entry</span><span class="p">.</span><span class="n">getKey</span><span class="p">()</span> <span class="p">+</span> <span class="s2">"="</span> <span class="p">+</span> <span class="n">entry</span><span class="p">.</span><span class="nf">getValue</span><span class="p">();</span>
+                    <span class="n">x</span><span class="p">++;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="n">HttpClient</span> <span class="n">client</span> <span class="p">=</span> <span class="n">new</span> <span class="n">HttpClient</span><span class="p">();</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"url:::"</span> <span class="p">+</span> <span class="n">url</span><span class="p">);</span>
+            <span class="n">GetMethod</span> <span class="n">method</span> <span class="p">=</span> <span class="n">new</span> <span class="n">GetMethod</span><span class="p">(</span><span class="n">url</span><span class="p">);</span>
+            <span class="p">//</span><span class="err">设定请求头的样式</span> 
+            <span class="n">method</span><span class="p">.</span><span class="n">setRequestHeader</span><span class="p">(</span><span class="s2">"Content-Type"</span><span class="p">,</span> <span class="s2">"application/x-www-form-urlencoded;charset=utf-8"</span><span class="p">);</span>
+            <span class="n">int</span> <span class="n">code</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">executeMethod</span><span class="p">(</span><span class="n">method</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">code</span> <span class="p">&gt;=</span> <span class="m">200</span> <span class="p">&amp;&amp;</span> <span class="n">code</span> <span class="p">&lt;</span> <span class="m">300</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">InputStream</span> <span class="k">in</span> <span class="p">=</span> <span class="n">method</span><span class="p">.</span><span class="n">getResponseBodyAsStream</span><span class="p">();</span>
+                <span class="n">str</span> <span class="p">=</span> <span class="n">IOUtils</span><span class="p">.</span><span class="n">toString</span><span class="p">(</span><span class="k">in</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">//</span> <span class="n">TODO</span> <span class="n">Auto</span><span class="p">-</span><span class="n">generated</span> <span class="n">catch</span> <span class="n">block</span> 
+            <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="n">return</span> <span class="n">str</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="p">/**</span>
+     <span class="p">*</span> <span class="err">获取</span><span class="n">String</span><span class="err">的</span><span class="n">MD5</span><span class="err">值</span>
+     <span class="p">*</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">param</span> <span class="n">info</span> <span class="err">字符串</span>
+     <span class="p">*</span> <span class="p">@</span><span class="n">return</span> <span class="err">该字符串的</span><span class="n">MD5</span><span class="err">值</span>
+     <span class="p">*/</span>
+    <span class="k">public</span> <span class="n">static</span> <span class="k">String</span> <span class="n">getMD5</span><span class="p">(</span><span class="k">String</span> <span class="n">info</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">try</span> <span class="p">{</span>
+            <span class="p">//</span><span class="err">获取</span> <span class="n">MessageDigest</span> <span class="err">对象，参数为</span> <span class="n">MD5</span> <span class="err">字符串，表示这是一个</span> <span class="n">MD5</span> <span class="err">算法（其他还有</span> <span class="n">SHA1</span> <span class="err">算法等）：</span> 
+            <span class="n">MessageDigest</span> <span class="n">md5</span> <span class="p">=</span> <span class="n">MessageDigest</span><span class="p">.</span><span class="n">getInstance</span><span class="p">(</span><span class="s2">"MD5"</span><span class="p">);</span>
+
+            <span class="p">//</span><span class="n">update</span><span class="p">(</span><span class="n">byte</span><span class="p">[])</span><span class="err">方法，输入原数据</span> 
+            <span class="p">//</span><span class="err">类似</span><span class="n">StringBuilder</span><span class="err">对象的</span><span class="n">append</span><span class="p">()</span><span class="err">方法，追加模式，属于一个累计更改的过程</span> 
+            <span class="n">md5</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">getBytes</span><span class="p">(</span><span class="s2">"UTF-8"</span><span class="p">));</span>
+
+            <span class="p">//</span><span class="n">digest</span><span class="p">()</span><span class="err">被调用后</span><span class="p">,</span><span class="n">MessageDigest</span><span class="err">对象就被重置，即不能连续再次调用该方法计算原数据的</span><span class="n">MD5</span><span class="err">值。可以手动调用</span><span class="nb">reset</span><span class="p">()</span><span class="err">方法重置输入源。</span> 
+            <span class="p">//</span><span class="n">digest</span><span class="p">()</span><span class="err">返回值</span><span class="m">16</span><span class="err">位长度的哈希值，由</span><span class="n">byte</span><span class="p">[]</span><span class="err">承接</span> 
+            <span class="n">byte</span><span class="p">[]</span> <span class="n">md5Array</span> <span class="p">=</span> <span class="n">md5</span><span class="p">.</span><span class="n">digest</span><span class="p">();</span>
+
+            <span class="p">//</span><span class="n">byte</span><span class="p">[]</span><span class="err">通常我们会转化为十六进制的</span><span class="m">32</span><span class="err">位长度的字符串来使用</span><span class="p">,</span><span class="err">本文会介绍三种常用的转换方法</span> 
+            <span class="n">return</span> <span class="n">bytesToHex</span><span class="p">(</span><span class="n">md5Array</span><span class="p">);</span>
+        <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">NoSuchAlgorithmException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">return</span> <span class="s2">""</span><span class="p">;</span>
+        <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">UnsupportedEncodingException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">return</span> <span class="s2">""</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">private</span> <span class="n">static</span> <span class="k">String</span> <span class="n">bytesToHex</span><span class="p">(</span><span class="n">byte</span><span class="p">[]</span> <span class="n">md5Array</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">StringBuilder</span> <span class="n">strBuilder</span> <span class="p">=</span> <span class="n">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
+        <span class="n">for</span> <span class="p">(</span><span class="n">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">md5Array</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
+            <span class="n">int</span> <span class="n">temp</span> <span class="p">=</span> <span class="m">0xff</span> <span class="p">&amp;</span> <span class="n">md5Array</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="k">String</span> <span class="n">hexString</span> <span class="p">=</span> <span class="k">Integer</span><span class="p">.</span><span class="n">toHexString</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">hexString</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{//</span><span class="err">如果是十六进制的</span><span class="m">0f</span><span class="err">，默认只显示</span><span class="n">f</span><span class="err">，此时要补上</span><span class="m">0</span>
+                <span class="n">strBuilder</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"0"</span><span class="p">).</span><span class="n">append</span><span class="p">(</span><span class="n">hexString</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">strBuilder</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">hexString</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">return</span> <span class="n">strBuilder</span><span class="p">.</span><span class="n">toString</span><span class="p">();</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+</code></pre></div>
+<hr>
+<h2 id='ws-api-demo-java'><span id="ws-api-java">ws-api Demo (java) </span></h2><div class="highlight"><pre class="highlight mosel"><code>
+<span class="k">package</span> <span class="n">test</span><span class="p">;</span>
+
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">ByteArrayInputStream</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">ByteArrayOutputStream</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">IOException</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">net</span><span class="p">.</span><span class="n">URI</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">nio</span><span class="p">.</span><span class="n">ByteBuffer</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">nio</span><span class="p">.</span><span class="n">CharBuffer</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">nio</span><span class="p">.</span><span class="n">charset</span><span class="p">.</span><span class="n">Charset</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">nio</span><span class="p">.</span><span class="n">charset</span><span class="p">.</span><span class="n">CharsetDecoder</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">cert</span><span class="p">.</span><span class="n">CertificateException</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">cert</span><span class="p">.</span><span class="n">X509Certificate</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">HashMap</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">Map</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">zip</span><span class="p">.</span><span class="n">GZIPInputStream</span><span class="p">;</span>
+
+<span class="n">import</span> <span class="n">javax</span><span class="p">.</span><span class="n">net</span><span class="p">.</span><span class="n">ssl</span><span class="p">.</span><span class="n">SSLContext</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">javax</span><span class="p">.</span><span class="n">net</span><span class="p">.</span><span class="n">ssl</span><span class="p">.</span><span class="n">TrustManager</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">javax</span><span class="p">.</span><span class="n">net</span><span class="p">.</span><span class="n">ssl</span><span class="p">.</span><span class="n">X509TrustManager</span><span class="p">;</span>
+
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">java_websocket</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">DefaultSSLWebSocketClientFactory</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">java_websocket</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">WebSocketClient</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">java_websocket</span><span class="p">.</span><span class="n">drafts</span><span class="p">.</span><span class="n">Draft</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">java_websocket</span><span class="p">.</span><span class="n">drafts</span><span class="p">.</span><span class="n">Draft_17</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">org</span><span class="p">.</span><span class="n">java_websocket</span><span class="p">.</span><span class="n">handshake</span><span class="p">.</span><span class="n">ServerHandshake</span><span class="p">;</span>
+
+<span class="p">/**</span>
+ <span class="p">*</span> <span class="p">@</span><span class="n">author</span> <span class="err">鲫鱼哥</span> <span class="n">DateTime</span><span class="p">:</span><span class="m">2018</span><span class="err">年</span><span class="m">11</span><span class="err">月</span><span class="m">22</span><span class="err">日</span> <span class="err">下午</span><span class="m">9</span><span class="p">:</span><span class="m">25</span><span class="p">:</span><span class="m">20</span> 
+ <span class="p">*</span> <span class="err">建议使用的</span><span class="n">websocket</span> <span class="n">client</span><span class="err">版本</span> 
+ <span class="p">*</span> <span class="p">&lt;</span><span class="n">dependency</span><span class="p">&gt;</span> 
+ <span class="p">*</span> <span class="p">&lt;</span><span class="n">groupId</span><span class="p">&gt;</span><span class="n">org</span><span class="p">.</span><span class="n">java</span><span class="p">-</span><span class="n">websocket</span><span class="p">&lt;/</span><span class="n">groupId</span><span class="p">&gt;</span> 
+ <span class="p">*</span> <span class="p">&lt;</span><span class="n">artifactId</span><span class="p">&gt;</span><span class="n">Java</span><span class="p">-</span><span class="n">WebSocket</span><span class="p">&lt;/</span><span class="n">artifactId</span><span class="p">&gt;</span> 
+ <span class="p">*</span> <span class="p">&lt;</span><span class="k">version</span><span class="p">&gt;</span><span class="m">1.3.0</span><span class="p">&lt;/</span><span class="k">version</span><span class="p">&gt;</span> 
+ <span class="p">*</span> <span class="p">&lt;/</span><span class="n">dependency</span><span class="p">&gt;</span> 
+ <span class="p">*</span>
+ <span class="p">*/</span>
+<span class="k">public</span> <span class="n">class</span> <span class="n">WsTest</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="k">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">try</span> <span class="p">{</span>
+<span class="p">//</span><span class="n">wsurl</span> 
+            <span class="k">String</span> <span class="n">url</span> <span class="p">=</span> <span class="s2">"wss://ws.hiex.pro/kline-api/ws"</span><span class="p">;</span>
+<span class="p">//</span><span class="err">历史数据请求参数</span> 
+            <span class="k">String</span> <span class="n">reqParam</span> <span class="p">=</span> <span class="s2">"{"</span><span class="n">event</span><span class="s2">":"</span><span class="n">req</span><span class="s2">","</span><span class="n">params</span><span class="s2">":{"</span><span class="n">channel</span><span class="s2">":"</span><span class="n">market_btcusdt_trade_ticker</span><span class="s2">","</span><span class="n">cb_id</span><span class="s2">":"</span><span class="n">btcusdt</span><span class="s2">","</span><span class="n">top</span><span class="s2">":150}}"</span><span class="p">;</span>
+<span class="p">//</span><span class="err">订阅参数</span> 
+            <span class="k">String</span> <span class="n">subParam</span> <span class="p">=</span> <span class="s2">"{"</span><span class="n">event</span><span class="s2">":"</span><span class="n">sub</span><span class="s2">","</span><span class="n">params</span><span class="s2">":{"</span><span class="n">channel</span><span class="s2">":"</span><span class="n">market_btcusdt_trade_ticker</span><span class="s2">","</span><span class="n">cb_id</span><span class="s2">":"</span><span class="n">btcusdt</span><span class="s2">","</span><span class="n">top</span><span class="s2">":150}}"</span><span class="p">;</span>
+
+<span class="p">//</span><span class="err">初始化请求历史数据</span> 
+            <span class="n">WebSocketUtils</span> <span class="n">wsc</span> <span class="p">=</span> <span class="n">WebSocketUtils</span><span class="p">.</span><span class="n">executeWebSocket</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">reqParam</span><span class="p">);</span>
+
+<span class="p">//</span><span class="err">订阅实时数据</span> 
+            <span class="n">wsc</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="n">subParam</span><span class="p">);</span>
+
+<span class="p">//</span><span class="err">线程不结束，等待新的消息，</span><span class="n">www</span><span class="p">.</span><span class="n">hiex</span><span class="p">.</span><span class="n">pro</span> <span class="err">一般一分钟左右会有新的成交返回</span>
+            <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">Thread</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="m">1000</span><span class="p">);</span>
+            <span class="p">}</span>
+
+        <span class="p">}</span><span class="n">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">static</span> <span class="n">class</span> <span class="n">WebSocketUtils</span> <span class="n">extends</span> <span class="n">WebSocketClient</span> <span class="p">{</span>
+        <span class="n">private</span> <span class="n">static</span> <span class="n">WebSocketUtils</span> <span class="n">wsclient</span> <span class="p">=</span> <span class="n">null</span><span class="p">;</span>
+        <span class="n">private</span> <span class="k">String</span> <span class="n">msg</span> <span class="p">=</span> <span class="s2">""</span><span class="p">;</span>
+
+        <span class="k">public</span> <span class="n">WebSocketUtils</span><span class="p">(</span><span class="n">URI</span> <span class="n">serverURI</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">super</span><span class="p">(</span><span class="n">serverURI</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="n">WebSocketUtils</span><span class="p">(</span><span class="n">URI</span> <span class="n">serverUri</span><span class="p">,</span> <span class="n">Draft</span> <span class="n">draft</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">super</span><span class="p">(</span><span class="n">serverUri</span><span class="p">,</span> <span class="n">draft</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="n">WebSocketUtils</span><span class="p">(</span><span class="n">URI</span> <span class="n">serverUri</span><span class="p">,</span> <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">headers</span><span class="p">,</span> <span class="n">int</span> <span class="n">connecttimeout</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">super</span><span class="p">(</span><span class="n">serverUri</span><span class="p">,</span> <span class="n">new</span> <span class="n">Draft_17</span><span class="p">(),</span> <span class="n">headers</span><span class="p">,</span> <span class="n">connecttimeout</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="p">@</span><span class="n">Override</span>
+        <span class="k">public</span> <span class="n">void</span> <span class="n">onOpen</span><span class="p">(</span><span class="n">ServerHandshake</span> <span class="n">serverHandshake</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"链接已建立"</span><span class="p">);</span>
+
+        <span class="p">}</span>
+
+        <span class="p">@</span><span class="n">Override</span>
+        <span class="k">public</span> <span class="n">void</span> <span class="n">onMessage</span><span class="p">(</span><span class="k">String</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"收到字符串消息"</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="p">@</span><span class="n">Override</span>
+        <span class="k">public</span> <span class="n">void</span> <span class="n">onClose</span><span class="p">(</span><span class="n">int</span> <span class="n">i</span><span class="p">,</span> <span class="k">String</span> <span class="n">s</span><span class="p">,</span> <span class="k">boolean</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"链接已关闭"</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="p">@</span><span class="n">Override</span>
+        <span class="k">public</span> <span class="n">void</span> <span class="n">onError</span><span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"报错啦"</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="p">@</span><span class="n">Override</span>
+        <span class="k">public</span> <span class="n">void</span> <span class="n">onMessage</span><span class="p">(</span><span class="n">ByteBuffer</span> <span class="n">socketBuffer</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">try</span> <span class="p">{</span>
+                <span class="k">String</span> <span class="n">marketStr</span> <span class="p">=</span> <span class="n">byteBufferToString</span><span class="p">(</span><span class="n">socketBuffer</span><span class="p">);</span>
+                <span class="k">String</span> <span class="n">market</span> <span class="p">=</span> <span class="n">uncompress</span><span class="p">(</span><span class="n">marketStr</span><span class="p">).</span><span class="n">toLowerCase</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">market</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"收到消息ping："</span><span class="p">+</span><span class="n">market</span><span class="p">);</span>
+                    <span class="k">String</span> <span class="n">tmp</span> <span class="p">=</span> <span class="n">market</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">,</span> <span class="s2">"pong"</span><span class="p">);</span>
+                    <span class="n">wsclient</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="n">market</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"ping"</span><span class="p">,</span> <span class="s2">"pong"</span><span class="p">));</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="n">msg</span> <span class="p">=</span> <span class="n">market</span><span class="p">;</span>
+                    <span class="nf">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s2">"收到消息："</span><span class="p">+</span><span class="n">msg</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="n">static</span> <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">getWebSocketHeaders</span><span class="p">()</span> <span class="n">throws</span> <span class="n">IOException</span> <span class="p">{</span>
+            <span class="n">Map</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;</span> <span class="n">headers</span> <span class="p">=</span> <span class="n">new</span> <span class="n">HashMap</span><span class="p">&lt;</span><span class="k">String</span><span class="p">,</span> <span class="k">String</span><span class="p">&gt;();</span>
+            <span class="n">return</span> <span class="n">headers</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">private</span> <span class="n">static</span> <span class="n">void</span> <span class="n">trustAllHosts</span><span class="p">(</span><span class="n">WebSocketUtils</span> <span class="n">appClient</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">TrustManager</span><span class="p">[]</span> <span class="n">trustAllCerts</span> <span class="p">=</span> <span class="n">new</span> <span class="n">TrustManager</span><span class="p">[]</span> <span class="p">{</span> <span class="n">new</span> <span class="n">X509TrustManager</span><span class="p">()</span> <span class="p">{</span>
+                <span class="k">public</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">cert</span><span class="p">.</span><span class="n">X509Certificate</span><span class="p">[]</span> <span class="n">getAcceptedIssuers</span><span class="p">()</span> <span class="p">{</span>
+                    <span class="n">return</span> <span class="n">new</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">cert</span><span class="p">.</span><span class="n">X509Certificate</span><span class="p">[]</span> <span class="p">{};</span>
+                <span class="p">}</span>
+
+                <span class="k">public</span> <span class="n">void</span> <span class="n">checkClientTrusted</span><span class="p">(</span><span class="n">X509Certificate</span><span class="p">[]</span> <span class="n">chain</span><span class="p">,</span> <span class="k">String</span> <span class="n">authType</span><span class="p">)</span> <span class="n">throws</span> <span class="n">CertificateException</span> <span class="p">{</span>
+                <span class="p">}</span>
+
+                <span class="k">public</span> <span class="n">void</span> <span class="n">checkServerTrusted</span><span class="p">(</span><span class="n">X509Certificate</span><span class="p">[]</span> <span class="n">chain</span><span class="p">,</span> <span class="k">String</span> <span class="n">authType</span><span class="p">)</span> <span class="n">throws</span> <span class="n">CertificateException</span> <span class="p">{</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="p">};</span>
+
+            <span class="n">try</span> <span class="p">{</span>
+                <span class="n">SSLContext</span> <span class="n">sc</span> <span class="p">=</span> <span class="n">SSLContext</span><span class="p">.</span><span class="n">getInstance</span><span class="p">(</span><span class="s2">"TLS"</span><span class="p">);</span>
+                <span class="n">sc</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="n">null</span><span class="p">,</span> <span class="n">trustAllCerts</span><span class="p">,</span> <span class="n">new</span> <span class="n">java</span><span class="p">.</span><span class="n">security</span><span class="p">.</span><span class="n">SecureRandom</span><span class="p">());</span>
+                <span class="n">appClient</span><span class="p">.</span><span class="n">setWebSocketFactory</span><span class="p">(</span><span class="n">new</span> <span class="n">DefaultSSLWebSocketClientFactory</span><span class="p">(</span><span class="n">sc</span><span class="p">));</span>
+            <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">e</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">public</span> <span class="n">static</span> <span class="n">WebSocketUtils</span> <span class="n">executeWebSocket</span><span class="p">(</span><span class="k">String</span> <span class="n">url</span><span class="p">,</span><span class="k">String</span> <span class="n">sendMsg</span><span class="p">)</span> <span class="n">throws</span> <span class="n">Exception</span> <span class="p">{</span>
+            <span class="n">wsclient</span> <span class="p">=</span> <span class="n">new</span> <span class="n">WebSocketUtils</span><span class="p">(</span><span class="n">new</span> <span class="n">URI</span><span class="p">(</span><span class="n">url</span><span class="p">),</span> <span class="n">getWebSocketHeaders</span><span class="p">(),</span> <span class="m">1000</span><span class="p">);</span>
+            <span class="n">trustAllHosts</span><span class="p">(</span><span class="n">wsclient</span><span class="p">);</span>
+            <span class="n">wsclient</span><span class="p">.</span><span class="n">connectBlocking</span><span class="p">();</span>
+            <span class="n">wsclient</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="n">sendMsg</span><span class="p">);</span>
+            <span class="n">return</span> <span class="n">wsclient</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="p">//</span> <span class="n">buffer</span> <span class="err">转</span><span class="k">String</span> 
+        <span class="k">public</span> <span class="k">String</span> <span class="n">byteBufferToString</span><span class="p">(</span><span class="n">ByteBuffer</span> <span class="n">buffer</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">CharBuffer</span> <span class="n">charBuffer</span> <span class="p">=</span> <span class="n">null</span><span class="p">;</span>
+            <span class="n">try</span> <span class="p">{</span>
+                <span class="n">Charset</span> <span class="n">charset</span> <span class="p">=</span> <span class="n">Charset</span><span class="p">.</span><span class="n">forName</span><span class="p">(</span><span class="s2">"ISO-8859-1"</span><span class="p">);</span>
+                <span class="n">CharsetDecoder</span> <span class="n">decoder</span> <span class="p">=</span> <span class="n">charset</span><span class="p">.</span><span class="n">newDecoder</span><span class="p">();</span>
+                <span class="n">charBuffer</span> <span class="p">=</span> <span class="n">decoder</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
+                <span class="n">buffer</span><span class="p">.</span><span class="n">flip</span><span class="p">();</span>
+                <span class="n">return</span> <span class="n">charBuffer</span><span class="p">.</span><span class="n">toString</span><span class="p">();</span>
+            <span class="p">}</span> <span class="n">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">ex</span><span class="p">.</span><span class="n">printStackTrace</span><span class="p">();</span>
+                <span class="n">return</span> <span class="n">null</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="p">//</span> <span class="err">解压缩</span> 
+        <span class="k">public</span> <span class="k">String</span> <span class="n">uncompress</span><span class="p">(</span><span class="k">String</span> <span class="n">str</span><span class="p">)</span> <span class="n">throws</span> <span class="n">IOException</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="p">==</span> <span class="n">null</span> <span class="p">||</span> <span class="n">str</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">return</span> <span class="n">str</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">ByteArrayOutputStream</span> <span class="n">out</span> <span class="p">=</span> <span class="n">new</span> <span class="n">ByteArrayOutputStream</span><span class="p">();</span>
+            <span class="n">ByteArrayInputStream</span> <span class="k">in</span> <span class="p">=</span> <span class="n">new</span> <span class="n">ByteArrayInputStream</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">getBytes</span><span class="p">(</span><span class="s2">"ISO-8859-1"</span><span class="p">));</span>
+            <span class="n">GZIPInputStream</span> <span class="n">gunzip</span> <span class="p">=</span> <span class="n">new</span> <span class="n">GZIPInputStream</span><span class="p">(</span><span class="k">in</span><span class="p">);</span>
+            <span class="n">byte</span><span class="p">[]</span> <span class="n">buffer</span> <span class="p">=</span> <span class="n">new</span> <span class="n">byte</span><span class="p">[</span><span class="m">256</span><span class="p">];</span>
+            <span class="n">int</span> <span class="n">n</span><span class="p">;</span>
+            <span class="k">while</span> <span class="p">((</span><span class="n">n</span> <span class="p">=</span> <span class="n">gunzip</span><span class="p">.</span><span class="nb">read</span><span class="p">(</span><span class="n">buffer</span><span class="p">))</span> <span class="p">&gt;=</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">out</span><span class="p">.</span><span class="nb">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">return</span> <span class="n">out</span><span class="p">.</span><span class="n">toString</span><span class="p">();</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div>
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
-          </div>
       </div>
     </div>
   </body>
